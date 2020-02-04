@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "VHStudent.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     
     BOOL boolVar = YES;
     
@@ -27,10 +29,71 @@
     
     double doubleVar = 2.5f;
     
+    NSNumber* boolObject = [NSNumber numberWithBool:boolVar];
+    NSNumber* intObject  = [NSNumber numberWithInteger:intVar];
+    NSNumber* uIntObject = [NSNumber numberWithUnsignedInteger:uIntVar];
+    NSNumber* floatObject = [NSNumber numberWithFloat:floatVar];
+    NSNumber* doubleObject = [NSNumber numberWithDouble:doubleVar];
+    
+    NSArray* array = [NSArray arrayWithObjects:boolObject, intObject, uIntObject, floatObject, doubleObject, nil];
+    
+    /*
     NSLog(@"\nboolVar: %d\nintVar: %ld\nuIntVar: %lu\nfloatVar: %f\ndoubleVar: %f", boolVar, (long)intVar, (unsigned long)uIntVar, floatVar, doubleVar);
     NSLog(@"\n\nboolVar: %lu\nintVar: %ld\nuIntVar: %lu\nfloatVar: %lu\ndoubleVar: %lu", sizeof(boolVar), sizeof((long)intVar), sizeof((unsigned long)uIntVar), sizeof(floatVar), sizeof(doubleVar));
     
+    VHStudent* studentA = [[VHStudent alloc] init];
+    
+    studentA.name = @"Best student";
+    NSLog(@"StudentA name: %@", studentA.name);
+    
+    VHStudent* studentB = studentA;
+    studentB.name = @"Bad Student";
+    NSLog(@"StudentA name: %@", studentB.name);
+    
+    NSInteger a = 10;
+    NSLog(@"a: %ld", (long)a);
+    
+    NSInteger b = a;
+    b = 5;
+    NSLog(@"a: %ld, b: %ld", (long)a, (long)b);
+    
+    NSInteger* c = &a;
+    *c = 8;
+    NSLog(@"a: %ld, b: %ld", (long)a, (long)b);
+    
+    NSInteger* test = 0;
+    NSInteger result = [self test:a testPointer:&test];
+    NSLog(@"result: %ld, test: %ld", (long)result, (long)test);
+    */
+    
+    /*
+    VHStudent* student = [[VHStudent alloc] init];
+    [student setGender:VHGenderMale];
+    */
+    
+    CGPoint point;
+    point.x = 11;
+    point.y = 12;
+    point = CGPointMake(7, 7);
+    
+    CGSize  size;
+    size.height = 123;
+    size.width  = 234;
+    
+    CGRect  rect;
+    rect.origin.x = 7;
+    rect.origin.y = 7;
+    rect = CGRectMake(3, 6, 12, 21);
+    
+    BOOL result = CGRectContainsPoint(rect, point);
+    
+    
     return YES;
+}
+
+- (int)test:(NSInteger)someVar testPointer:(NSInteger*)testPointer{
+    *testPointer = 5;
+    return someVar;
 }
 
 

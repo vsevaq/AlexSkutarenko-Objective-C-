@@ -13,6 +13,7 @@
 		0456801C23E9B1380049F7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0456801B23E9B1380049F7C2 /* Assets.xcassets */; };
 		0456801F23E9B1380049F7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0456801D23E9B1380049F7C2 /* LaunchScreen.storyboard */; };
 		0456802223E9B1380049F7C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456802123E9B1380049F7C2 /* main.m */; };
+		0456802A23E9B9EF0049F7C2 /* VHStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456802923E9B9EF0049F7C2 /* VHStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		0456801E23E9B1380049F7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0456802023E9B1380049F7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0456802123E9B1380049F7C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0456802823E9B9EF0049F7C2 /* VHStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VHStudent.h; sourceTree = "<group>"; };
+		0456802923E9B9EF0049F7C2 /* VHStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		0456801123E9B1350049F7C2 /* 06.DataTypes */ = {
 			isa = PBXGroup;
 			children = (
+				0456802823E9B9EF0049F7C2 /* VHStudent.h */,
+				0456802923E9B9EF0049F7C2 /* VHStudent.m */,
 				0456801223E9B1350049F7C2 /* AppDelegate.h */,
 				0456801323E9B1350049F7C2 /* AppDelegate.m */,
 				0456801523E9B1350049F7C2 /* ViewController.h */,
@@ -144,6 +149,7 @@
 				0456801723E9B1350049F7C2 /* ViewController.m in Sources */,
 				0456802223E9B1380049F7C2 /* main.m in Sources */,
 				0456801423E9B1350049F7C2 /* AppDelegate.m in Sources */,
+				0456802A23E9B9EF0049F7C2 /* VHStudent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
