@@ -37,6 +37,14 @@
     
     NSArray* array = [NSArray arrayWithObjects:boolObject, intObject, uIntObject, floatObject, doubleObject, nil];
     
+    NSLog(@"\nboolVar: %d\nintVar: %ld\nuIntVar: %lu\nfloatVar: %f\ndoubleVar: %f",
+          [[array objectAtIndex:0] boolValue],
+          [[array objectAtIndex:1] integerValue],
+          [[array objectAtIndex: 2] unsignedIntegerValue],
+          [[array objectAtIndex:3] floatValue],
+          [[array objectAtIndex:4] doubleValue]
+          );
+     
     /*
     NSLog(@"\nboolVar: %d\nintVar: %ld\nuIntVar: %lu\nfloatVar: %f\ndoubleVar: %f", boolVar, (long)intVar, (unsigned long)uIntVar, floatVar, doubleVar);
     NSLog(@"\n\nboolVar: %lu\nintVar: %ld\nuIntVar: %lu\nfloatVar: %lu\ndoubleVar: %lu", sizeof(boolVar), sizeof((long)intVar), sizeof((unsigned long)uIntVar), sizeof(floatVar), sizeof(doubleVar));
@@ -71,6 +79,7 @@
     [student setGender:VHGenderMale];
     */
     
+    /*
     CGPoint point;
     point.x = 11;
     point.y = 12;
@@ -86,7 +95,27 @@
     rect = CGRectMake(3, 6, 12, 21);
     
     BOOL result = CGRectContainsPoint(rect, point);
+    */
     
+    CGPoint point1 = CGPointMake(0, 5);
+    CGPoint point2 = CGPointMake(1, 7);
+    CGPoint point3 = CGPointMake(2, 9);
+    CGPoint point4 = CGPointMake(3, 1);
+    CGPoint point5 = CGPointMake(5, 7);
+    
+    
+    NSArray* array2 = [NSArray arrayWithObjects:
+                      [NSValue valueWithCGPoint:point1],
+                      [NSValue valueWithCGPoint:point2],
+                      [NSValue valueWithCGPoint:point3],
+                      [NSValue valueWithCGPoint:point4],
+                      [NSValue valueWithCGPoint:point5],
+                      nil];
+    
+    for (NSValue* value in array2) {
+        CGPoint p = [value CGPointValue];
+        NSLog(@"point: %@", NSStringFromCGPoint(p));
+    }
     
     return YES;
 }
