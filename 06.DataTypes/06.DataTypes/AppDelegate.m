@@ -120,7 +120,7 @@
     return YES;
 }
 
-- (int)test:(NSInteger)someVar testPointer:(NSInteger*)testPointer{
+- (long)test:(NSInteger)someVar testPointer:(NSInteger*)testPointer{
     *testPointer = 5;
     return someVar;
 }
