@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0456800F23E9B1350049F7C2 /* 06.DataTypes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 06.DataTypes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0456800F23E9B1350049F7C2 /* 06. DataTypes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06. DataTypes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0456801223E9B1350049F7C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0456801323E9B1350049F7C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0456801523E9B1350049F7C2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		0456800623E9B1350049F7C2 = {
 			isa = PBXGroup;
 			children = (
-				0456801123E9B1350049F7C2 /* 06.DataTypes */,
+				0456801123E9B1350049F7C2 /* 06. DataTypes */,
 				0456801023E9B1350049F7C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,12 +53,12 @@
 		0456801023E9B1350049F7C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0456800F23E9B1350049F7C2 /* 06.DataTypes.app */,
+				0456800F23E9B1350049F7C2 /* 06. DataTypes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0456801123E9B1350049F7C2 /* 06.DataTypes */ = {
+		0456801123E9B1350049F7C2 /* 06. DataTypes */ = {
 			isa = PBXGroup;
 			children = (
 				0456802823E9B9EF0049F7C2 /* VHStudent.h */,
@@ -73,15 +73,15 @@
 				0456802023E9B1380049F7C2 /* Info.plist */,
 				0456802123E9B1380049F7C2 /* main.m */,
 			);
-			path = 06.DataTypes;
+			path = "06. DataTypes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0456800E23E9B1350049F7C2 /* 06.DataTypes */ = {
+		0456800E23E9B1350049F7C2 /* 06. DataTypes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0456802523E9B1380049F7C2 /* Build configuration list for PBXNativeTarget "06.DataTypes" */;
+			buildConfigurationList = 0456802523E9B1380049F7C2 /* Build configuration list for PBXNativeTarget "06. DataTypes" */;
 			buildPhases = (
 				0456800B23E9B1350049F7C2 /* Sources */,
 				0456800C23E9B1350049F7C2 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = 06.DataTypes;
+			name = "06. DataTypes";
 			productName = 06.DataTypes;
-			productReference = 0456800F23E9B1350049F7C2 /* 06.DataTypes.app */;
+			productReference = 0456800F23E9B1350049F7C2 /* 06. DataTypes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0456800A23E9B1350049F7C2 /* Build configuration list for PBXProject "06.DataTypes" */;
+			buildConfigurationList = 0456800A23E9B1350049F7C2 /* Build configuration list for PBXProject "06. DataTypes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0456800E23E9B1350049F7C2 /* 06.DataTypes */,
+				0456800E23E9B1350049F7C2 /* 06. DataTypes */,
 			);
 		};
 /* End PBXProject section */
@@ -293,7 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K55226VZK5;
-				INFOPLIST_FILE = 06.DataTypes/Info.plist;
+				INFOPLIST_FILE = "06. DataTypes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K55226VZK5;
-				INFOPLIST_FILE = 06.DataTypes/Info.plist;
+				INFOPLIST_FILE = "06. DataTypes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0456800A23E9B1350049F7C2 /* Build configuration list for PBXProject "06.DataTypes" */ = {
+		0456800A23E9B1350049F7C2 /* Build configuration list for PBXProject "06. DataTypes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0456802323E9B1380049F7C2 /* Debug */,
@@ -333,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0456802523E9B1380049F7C2 /* Build configuration list for PBXNativeTarget "06.DataTypes" */ = {
+		0456802523E9B1380049F7C2 /* Build configuration list for PBXNativeTarget "06. DataTypes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0456802623E9B1380049F7C2 /* Debug */,
