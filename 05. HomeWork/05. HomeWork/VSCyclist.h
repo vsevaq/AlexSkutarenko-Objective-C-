@@ -12,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VSCyclist : VSMan
 
--(void) moveMan;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,6 +11,7 @@
 #import "VSCyclist.h"
 #import "VSRunner.h"
 #import "VSSwimmer.h"
+#import "VSPerson.h"
 
 @interface AppDelegate ()
 
@@ -28,34 +29,54 @@
     aMan.weight = 85;
     aMan.isMale = YES;
     
-    VSMan* aCyclist = [[VSMan alloc] init];
+    VSCyclist* aCyclist = [[VSCyclist alloc] init];
     aCyclist.name = @"Sagan";
     aCyclist.height = 184;
     aCyclist.weight = 80;
     aCyclist.isMale = YES;
     
-    VSMan* aRunner = [[VSMan alloc] init];
+    VSRunner* aRunner = [[VSRunner alloc] init];
     [aRunner setName:@"Bolt"];
     [aRunner setHeight:192];
     [aRunner setWeight:82];
     [aRunner setIsMale:YES];
     
-    VSMan* aSwimmer = [[VSMan alloc] init];
+    VSSwimmer* aSwimmer = [[VSSwimmer alloc] init];
     aSwimmer.name = @"Vitalii";
     aSwimmer.height = 197;
     aSwimmer.weight = 84;
     aSwimmer.isMale = YES;
     
-    NSArray* arrayOfMan = [[NSArray alloc] initWithObjects:aMan, aCyclist, aRunner, aSwimmer, nil];
+    VSPerson* aPersone = [[VSPerson alloc] init];
+    aPersone.lastName = @"Trump";
+    aPersone.country = @"USA";
+    aPersone.birthday = @"14.06.1946";
+    
+    NSArray* arrayOfMan = [[NSArray alloc] initWithObjects:
+                           aMan,
+                           aCyclist,
+                           aRunner,
+                           aSwimmer,
+                           aPersone,
+                           nil];
     
     for (VSMan* someMan in arrayOfMan) {
-        NSLog(@"\n\nname: %@, hieght: %ld, weight: %ld, isMale: %d",
-              someMan.name,
-              (long)someMan.height,
-              (long)someMan.weight,
-              someMan.isMale);
+        if (someMan == aMan) {
+            NSLog(@"\n\nname: %@, hieght: %ld, weight: %ld, isMale: %d", someMan.name, (long)someMan.height, (long)someMan.weight, someMan.isMale);
+            NSLog(@" lastName: %@, country: %@, birthday: %@", aPersone.lastName, aPersone.country, aPersone.birthday);
+        }
+        if (someMan == aPersone){
+            [aMan moveMan];
+            [aPersone moveMan];
+        }
+        
+        NSLog(@"\n\nname: %@, hieght: %ld, weight: %ld, isMale: %d", someMan.name, (long)someMan.height, (long)someMan.weight, someMan.isMale);
         
         [someMan moveMan];
+    }
+    
+    for (int i = 0; i <= arrayOfMan.count; i++) {
+    
     }
     
     return YES;

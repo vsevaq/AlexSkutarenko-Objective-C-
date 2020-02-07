@@ -17,6 +17,7 @@
 		047CFDFF23EC953B0003D04A /* VSCyclist.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFDFE23EC953B0003D04A /* VSCyclist.m */; };
 		047CFE0223EC959C0003D04A /* VSRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE0123EC959C0003D04A /* VSRunner.m */; };
 		047CFE0523EC95C70003D04A /* VSSwimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE0423EC95C70003D04A /* VSSwimmer.m */; };
+		047CFE0823ED78560003D04A /* VSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE0723ED78560003D04A /* VSPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		047CFE0123EC959C0003D04A /* VSRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSRunner.m; sourceTree = "<group>"; };
 		047CFE0323EC95C70003D04A /* VSSwimmer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSSwimmer.h; sourceTree = "<group>"; };
 		047CFE0423EC95C70003D04A /* VSSwimmer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSSwimmer.m; sourceTree = "<group>"; };
+		047CFE0623ED78560003D04A /* VSPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSPerson.h; sourceTree = "<group>"; };
+		047CFE0723ED78560003D04A /* VSPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 			children = (
 				047CFDFA23EC7B6A0003D04A /* VSMan.h */,
 				047CFDFB23EC7B6A0003D04A /* VSMan.m */,
+				047CFE0623ED78560003D04A /* VSPerson.h */,
+				047CFE0723ED78560003D04A /* VSPerson.m */,
 				047CFDFD23EC953B0003D04A /* VSCyclist.h */,
 				047CFDFE23EC953B0003D04A /* VSCyclist.m */,
 				047CFE0023EC959C0003D04A /* VSRunner.h */,
@@ -166,6 +171,7 @@
 				047CFE0223EC959C0003D04A /* VSRunner.m in Sources */,
 				047CFDE623EC7B480003D04A /* AppDelegate.m in Sources */,
 				047CFDFC23EC7B6A0003D04A /* VSMan.m in Sources */,
+				047CFE0823ED78560003D04A /* VSPerson.m in Sources */,
 				047CFDFF23EC953B0003D04A /* VSCyclist.m in Sources */,
 				047CFE0523EC95C70003D04A /* VSSwimmer.m in Sources */,
 			);
