@@ -18,6 +18,10 @@
 		047CFE0223EC959C0003D04A /* VSRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE0123EC959C0003D04A /* VSRunner.m */; };
 		047CFE0523EC95C70003D04A /* VSSwimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE0423EC95C70003D04A /* VSSwimmer.m */; };
 		047CFE0823ED78560003D04A /* VSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE0723ED78560003D04A /* VSPerson.m */; };
+		047CFE0B23EEE4220003D04A /* VSAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE0A23EEE4220003D04A /* VSAnimal.m */; };
+		047CFE1023EEEEA60003D04A /* VSFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE0F23EEEEA60003D04A /* VSFish.m */; };
+		047CFE1323EEEEBE0003D04A /* VSBird.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE1223EEEEBE0003D04A /* VSBird.m */; };
+		047CFE1623EEEEFD0003D04A /* VSCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFE1523EEEEFD0003D04A /* VSCat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,14 @@
 		047CFE0423EC95C70003D04A /* VSSwimmer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSSwimmer.m; sourceTree = "<group>"; };
 		047CFE0623ED78560003D04A /* VSPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSPerson.h; sourceTree = "<group>"; };
 		047CFE0723ED78560003D04A /* VSPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSPerson.m; sourceTree = "<group>"; };
+		047CFE0923EEE4220003D04A /* VSAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSAnimal.h; sourceTree = "<group>"; };
+		047CFE0A23EEE4220003D04A /* VSAnimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSAnimal.m; sourceTree = "<group>"; };
+		047CFE0E23EEEEA60003D04A /* VSFish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSFish.h; sourceTree = "<group>"; };
+		047CFE0F23EEEEA60003D04A /* VSFish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSFish.m; sourceTree = "<group>"; };
+		047CFE1123EEEEBE0003D04A /* VSBird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSBird.h; sourceTree = "<group>"; };
+		047CFE1223EEEEBE0003D04A /* VSBird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSBird.m; sourceTree = "<group>"; };
+		047CFE1423EEEEFD0003D04A /* VSCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSCat.h; sourceTree = "<group>"; };
+		047CFE1523EEEEFD0003D04A /* VSCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSCat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +85,8 @@
 		047CFDE323EC7B480003D04A /* 05. HomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				047CFDFA23EC7B6A0003D04A /* VSMan.h */,
-				047CFDFB23EC7B6A0003D04A /* VSMan.m */,
-				047CFE0623ED78560003D04A /* VSPerson.h */,
-				047CFE0723ED78560003D04A /* VSPerson.m */,
-				047CFDFD23EC953B0003D04A /* VSCyclist.h */,
-				047CFDFE23EC953B0003D04A /* VSCyclist.m */,
-				047CFE0023EC959C0003D04A /* VSRunner.h */,
-				047CFE0123EC959C0003D04A /* VSRunner.m */,
-				047CFE0323EC95C70003D04A /* VSSwimmer.h */,
-				047CFE0423EC95C70003D04A /* VSSwimmer.m */,
+				047CFE1723EEEFF00003D04A /* Student level */,
+				047CFE0D23EEE4570003D04A /* Master level */,
 				047CFDE423EC7B480003D04A /* AppDelegate.h */,
 				047CFDE523EC7B480003D04A /* AppDelegate.m */,
 				047CFDE723EC7B480003D04A /* ViewController.h */,
@@ -94,6 +98,38 @@
 				047CFDF323EC7B490003D04A /* main.m */,
 			);
 			path = "05. HomeWork";
+			sourceTree = "<group>";
+		};
+		047CFE0D23EEE4570003D04A /* Master level */ = {
+			isa = PBXGroup;
+			children = (
+				047CFE0923EEE4220003D04A /* VSAnimal.h */,
+				047CFE0A23EEE4220003D04A /* VSAnimal.m */,
+				047CFE1423EEEEFD0003D04A /* VSCat.h */,
+				047CFE1523EEEEFD0003D04A /* VSCat.m */,
+				047CFE1123EEEEBE0003D04A /* VSBird.h */,
+				047CFE1223EEEEBE0003D04A /* VSBird.m */,
+				047CFE0E23EEEEA60003D04A /* VSFish.h */,
+				047CFE0F23EEEEA60003D04A /* VSFish.m */,
+			);
+			path = "Master level";
+			sourceTree = "<group>";
+		};
+		047CFE1723EEEFF00003D04A /* Student level */ = {
+			isa = PBXGroup;
+			children = (
+				047CFDFA23EC7B6A0003D04A /* VSMan.h */,
+				047CFDFB23EC7B6A0003D04A /* VSMan.m */,
+				047CFE0623ED78560003D04A /* VSPerson.h */,
+				047CFE0723ED78560003D04A /* VSPerson.m */,
+				047CFDFD23EC953B0003D04A /* VSCyclist.h */,
+				047CFDFE23EC953B0003D04A /* VSCyclist.m */,
+				047CFE0023EC959C0003D04A /* VSRunner.h */,
+				047CFE0123EC959C0003D04A /* VSRunner.m */,
+				047CFE0323EC95C70003D04A /* VSSwimmer.h */,
+				047CFE0423EC95C70003D04A /* VSSwimmer.m */,
+			);
+			path = "Student level";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +205,14 @@
 				047CFDE923EC7B480003D04A /* ViewController.m in Sources */,
 				047CFDF423EC7B490003D04A /* main.m in Sources */,
 				047CFE0223EC959C0003D04A /* VSRunner.m in Sources */,
+				047CFE1623EEEEFD0003D04A /* VSCat.m in Sources */,
 				047CFDE623EC7B480003D04A /* AppDelegate.m in Sources */,
+				047CFE1323EEEEBE0003D04A /* VSBird.m in Sources */,
 				047CFDFC23EC7B6A0003D04A /* VSMan.m in Sources */,
 				047CFE0823ED78560003D04A /* VSPerson.m in Sources */,
 				047CFDFF23EC953B0003D04A /* VSCyclist.m in Sources */,
+				047CFE0B23EEE4220003D04A /* VSAnimal.m in Sources */,
+				047CFE1023EEEEA60003D04A /* VSFish.m in Sources */,
 				047CFE0523EC95C70003D04A /* VSSwimmer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

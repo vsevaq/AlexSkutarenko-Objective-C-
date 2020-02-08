@@ -12,6 +12,11 @@
 #import "VSRunner.h"
 #import "VSSwimmer.h"
 #import "VSPerson.h"
+//---Student level
+#import "VSAnimal.h"
+#import "VSCat.h"
+#import "VSBird.h"
+#import "VSFish.h"
 
 @interface AppDelegate ()
 
@@ -48,6 +53,10 @@
     aSwimmer.isMale = YES;
     
     VSPerson* aPersone = [[VSPerson alloc] init];
+    aPersone.name = @"Strong person";
+    aPersone.height = 197;
+    aPersone.weight = 90;
+    aPersone.isMale = YES;
     aPersone.lastName = @"Trump";
     aPersone.country = @"USA";
     aPersone.birthday = @"14.06.1946";
@@ -69,7 +78,7 @@
         [someMan moveMan];
     }
     
-    NSLog(@"\n-------------------Student level----------------\n");
+    NSLog(@"\n\n\n-------------------Student level----------------\n");
     for (int i = (arrayOfMan.count) - 1; i >= 0; i--) {
         VSMan* pers = [arrayOfMan objectAtIndex:i];
         
@@ -80,6 +89,52 @@
             NSLog(@"\nisMale: %d, weight: %ld, height: %ld, name: %@", pers.isMale, (long)pers.weight, (long)pers.height, pers.name);
         }
     }
+    
+    NSLog(@"\n\n\n--------------------Master Level----------------\n");
+    VSAnimal* someAnimal = [[VSAnimal alloc] init];
+    [someAnimal setType:@"animel"];
+    [someAnimal setColor:@"red"];
+    [someAnimal setWeight:100];
+    
+    VSCat* aLion = [[VSCat alloc] init];
+    aLion.type = @"catFamily";
+    aLion.color = @"yellow";
+    aLion.weight = 150;
+    
+    VSBird* aBird = [[VSBird alloc] init];
+    [aBird setType:@"Air"];
+    [aBird setColor:@"Gray"];
+    [aBird setWeight:10];
+    
+    VSFish* aFish = [[VSFish alloc] init];
+    aFish.type = @"Water";
+    aFish.color = @"Blue";
+    aFish.weight = 120;
+    
+    NSArray* all = [[NSArray alloc] initWithObjects:aMan, aCyclist, aRunner, aSwimmer, aPersone, someAnimal, aLion, aBird, aFish, nil];
+    
+    for (NSObject* obj in all) {
+        if ([obj isKindOfClass:[VSMan class]]){
+            VSMan* hum = (VSMan*)obj;
+            NSLog(@"\nThis is a Human class");
+            NSLog(@"\nname: %@, height: %ld, weight: %ld ,isMail: %d", hum.name, (long)hum.height, (long)hum.weight, hum.isMale);
+            [hum moveMan];
+        }
+        
+        if ([obj isKindOfClass:[VSAnimal class]]){
+            VSAnimal* animal = (VSAnimal*)obj;
+            NSLog(@"\nThis is an Animal class");
+            NSLog(@"\ntype: %@, color: %@, weight: %ld", animal.type, animal.color, (long)animal.weight);
+            [animal moving];
+        }
+    }
+    
+    NSLog(@"\n\n\n--------------------Master Level----------------\n");
+    
+    NSArray* peopleArray = [[NSArray alloc] initWithObjects:aMan, aCyclist, aRunner, aSwimmer, aPersone, nil];
+    NSArray* animalArray = [[NSArray alloc] initWithObjects:someAnimal, aLion, aBird, aFish, nil];
+    
+    
     
     return YES;
 }
