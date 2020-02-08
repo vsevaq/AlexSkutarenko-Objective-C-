@@ -52,17 +52,11 @@
     aPersone.country = @"USA";
     aPersone.birthday = @"14.06.1946";
     
-    NSArray* arrayOfMan = [[NSArray alloc] initWithObjects:
-                           aMan,
-                           aCyclist,
-                           aRunner,
-                           aSwimmer,
-                           aPersone,
-                           nil];
+    NSArray* arrayOfMan = [[NSArray alloc] initWithObjects:aMan, aCyclist, aRunner, aSwimmer, aPersone, nil];
     
     for (VSMan* someMan in arrayOfMan) {
         if (someMan == aMan) {
-            NSLog(@"\n\nname: %@, hieght: %ld, weight: %ld, isMale: %d", someMan.name, (long)someMan.height, (long)someMan.weight, someMan.isMale);
+            NSLog(@"\n\nname: %@, height: %ld, weight: %ld, isMale: %d", someMan.name, (long)someMan.height, (long)someMan.weight, someMan.isMale);
             NSLog(@" lastName: %@, country: %@, birthday: %@", aPersone.lastName, aPersone.country, aPersone.birthday);
         }
         if (someMan == aPersone){
@@ -75,8 +69,16 @@
         [someMan moveMan];
     }
     
-    for (int i = 0; i <= arrayOfMan.count; i++) {
-    
+    NSLog(@"\n-------------------Student level----------------\n");
+    for (int i = (arrayOfMan.count) - 1; i >= 0; i--) {
+        VSMan* pers = [arrayOfMan objectAtIndex:i];
+        
+        if ([pers isKindOfClass:[VSPerson class]]){
+            VSPerson* anyPersone = (VSPerson*)pers;
+            NSLog(@"\nbirthday: %@, country: %@, lastName: %@", anyPersone.birthday, anyPersone.country, anyPersone.lastName);
+        } else {
+            NSLog(@"\nisMale: %d, weight: %ld, height: %ld, name: %@", pers.isMale, (long)pers.weight, (long)pers.height, pers.name);
+        }
     }
     
     return YES;
