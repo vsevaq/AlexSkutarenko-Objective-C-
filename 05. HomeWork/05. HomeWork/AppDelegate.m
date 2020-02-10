@@ -79,7 +79,7 @@
     }
     
     NSLog(@"\n\n\n-------------------Student level----------------\n");
-    for (int i = (arrayOfMan.count) - 1; i >= 0; i--) {
+    for (NSInteger i = (arrayOfMan.count) - 1; i >= 0; i--) {
         VSMan* pers = [arrayOfMan objectAtIndex:i];
         
         if ([pers isKindOfClass:[VSPerson class]]){
@@ -92,7 +92,7 @@
     
     NSLog(@"\n\n\n--------------------Master Level----------------\n");
     VSAnimal* someAnimal = [[VSAnimal alloc] init];
-    [someAnimal setType:@"animel"];
+    [someAnimal setType:@"animale"];
     [someAnimal setColor:@"red"];
     [someAnimal setWeight:100];
     
@@ -129,12 +129,23 @@
         }
     }
     
-    NSLog(@"\n\n\n--------------------Master Level----------------\n");
+    NSLog(@"\n\n\n--------------------Master Level----------------------------\n");
     
     NSArray* peopleArray = [[NSArray alloc] initWithObjects:aMan, aCyclist, aRunner, aSwimmer, aPersone, nil];
     NSArray* animalArray = [[NSArray alloc] initWithObjects:someAnimal, aLion, aBird, aFish, nil];
     
-    
+    for (NSUInteger i = 0; i <= (peopleArray.count - 1); i++) {
+        if (peopleArray[i] != nil) {
+            VSMan* human = (VSMan*)peopleArray[i];
+            NSLog(@"\nname: %@, height: %ld, weight: %ld", human.name, (long)human.height, (long)human.weight);
+        }
+        
+         
+        if (animalArray[i] != nil){
+            VSAnimal* animal = (VSAnimal*)animalArray[i];
+            NSLog(@"\ntype: %@, color: %@, weight: %ld", animal.type, animal.color, animal.weight);
+        }
+    }
     
     return YES;
 }
