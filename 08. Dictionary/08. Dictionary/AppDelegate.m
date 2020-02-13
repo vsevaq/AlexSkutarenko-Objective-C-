@@ -1,18 +1,12 @@
 //
 //  AppDelegate.m
-//  07. HomeWork
+//  08. Dictionary
 //
 //  Created by MacBook Pro on 2/13/20.
 //  Copyright © 2020 MacBookPro. All rights reserved.
 //
 
 #import "AppDelegate.h"
-//protocols
-#import "Jumpers.h"
-//#import "Swimmers.h"
-#import "Runners.h"
-//classes
-#import "VSCyclist.h"
 
 @interface AppDelegate ()
 
@@ -24,13 +18,33 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    VSCyclist* aCyclist = [[VSCyclist alloc] init];
+    /*
+    NSDictionary* dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
+                                @"Petrov", @"lastName",
+                                @"Vasiliy", @"name",
+                                [NSNumber numberWithInteger:25], @"age",
+                                nil];
+    */
+     
+    //NSDictionary* dictionary2 = [NSDictionary dictionaryWithObjectsAndKeys:<#(nonnull id), ...#>, nil];
     
-    aCyclist.name = @"Peter";
-    [aCyclist moveMan];
-    [aCyclist swimmingWithoutBreath];
-    [aCyclist swim];
-    NSLog(@"Swimming speed: %ld", (long)[aCyclist swimmingSpeed]);
+    NSInteger number = 27;
+    NSDictionary* dictionary3 = @{@"lastName":@"Petrov", @"name":@"Vasiliy", @"age":@(number)};
+    
+    NSLog(@"%@, \ncount: %ld", dictionary3, [dictionary3 count]);
+    
+    NSLog(@"%@", dictionary3);
+    NSLog(@"name: %@, lastName: %@, age: %ld",
+          [dictionary3 objectForKey:@"name"],
+          [dictionary3 objectForKey:@"name"],
+          (long)[[dictionary3 objectForKey:@"age"] integerValue]);
+    
+    NSLog(@"\n------------------------------------\n");
+    
+    for (NSString* key in [dictionary3 allKeys]) {
+        id obj = [dictionary3 objectForKey:key];
+        NSLog(@"key: %@, value: %@", key, obj);
+    }
     
     return YES;
 }
