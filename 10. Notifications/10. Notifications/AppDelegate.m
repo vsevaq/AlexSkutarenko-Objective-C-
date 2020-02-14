@@ -1,14 +1,12 @@
 //
 //  AppDelegate.m
-//  09. Delegates
+//  10. Notifications
 //
-//  Created by MacBook Pro on 2/13/20.
+//  Created by MacBook Pro on 2/14/20.
 //  Copyright © 2020 MacBookPro. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "VSDoctor.h"
-#import "VSPatient.h"
 
 @interface AppDelegate ()
 
@@ -19,23 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    VSPatient* patient1 = [[VSPatient alloc] init];
-    patient1.name = @"Vova";
-    patient1.temperature = 36.6f;
-    
-    VSPatient* patient2 = [[VSPatient alloc] init];
-    patient2.name = @"Petya";
-    patient2.temperature = 40.2f;
-    
-    VSDoctor* doctor = [[VSDoctor alloc] init];
-    
-    patient1.delegate = doctor;
-    patient2.delegate = doctor;
-    
-    NSLog(@"%@ are you ok? %@", patient1.name, [patient1 HowAreYou] ? @"Yes" : @"No");
-    NSLog(@"%@ are you ok? %@", patient2.name, [patient2 HowAreYou] ? @"Yes" : @"No");
-    
     return YES;
 }
 

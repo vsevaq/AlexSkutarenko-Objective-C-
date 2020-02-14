@@ -7,35 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		047CFEA923F5B2780003D04A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEA823F5B2780003D04A /* AppDelegate.m */; };
-		047CFEAC23F5B2780003D04A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEAB23F5B2780003D04A /* ViewController.m */; };
-		047CFEAF23F5B2780003D04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CFEAD23F5B2780003D04A /* Main.storyboard */; };
-		047CFEB123F5B27A0003D04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047CFEB023F5B27A0003D04A /* Assets.xcassets */; };
-		047CFEB423F5B27A0003D04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CFEB223F5B27A0003D04A /* LaunchScreen.storyboard */; };
-		047CFEB723F5B27A0003D04A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEB623F5B27A0003D04A /* main.m */; };
-		047CFEBF23F5B6550003D04A /* VSPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEBE23F5B6550003D04A /* VSPatient.m */; };
-		047CFEC223F5B9C20003D04A /* VSDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEC123F5B9C20003D04A /* VSDoctor.m */; };
+		047CFEF123F713BC0003D04A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEF023F713BC0003D04A /* AppDelegate.m */; };
+		047CFEF423F713BC0003D04A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEF323F713BC0003D04A /* ViewController.m */; };
+		047CFEF723F713BC0003D04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CFEF523F713BC0003D04A /* Main.storyboard */; };
+		047CFEF923F713BE0003D04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047CFEF823F713BE0003D04A /* Assets.xcassets */; };
+		047CFEFC23F713BE0003D04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CFEFA23F713BE0003D04A /* LaunchScreen.storyboard */; };
+		047CFEFF23F713BE0003D04A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEFE23F713BE0003D04A /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		047CFEA423F5B2780003D04A /* 09. Delegates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09. Delegates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		047CFEA723F5B2780003D04A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		047CFEA823F5B2780003D04A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		047CFEAA23F5B2780003D04A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		047CFEAB23F5B2780003D04A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		047CFEAE23F5B2780003D04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		047CFEB023F5B27A0003D04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		047CFEB323F5B27A0003D04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		047CFEB523F5B27A0003D04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		047CFEB623F5B27A0003D04A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		047CFEBD23F5B6550003D04A /* VSPatient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSPatient.h; sourceTree = "<group>"; };
-		047CFEBE23F5B6550003D04A /* VSPatient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSPatient.m; sourceTree = "<group>"; };
-		047CFEC023F5B9C20003D04A /* VSDoctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSDoctor.h; sourceTree = "<group>"; };
-		047CFEC123F5B9C20003D04A /* VSDoctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSDoctor.m; sourceTree = "<group>"; };
+		047CFEEC23F713BC0003D04A /* 10. Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10. Notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		047CFEEF23F713BC0003D04A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		047CFEF023F713BC0003D04A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		047CFEF223F713BC0003D04A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		047CFEF323F713BC0003D04A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		047CFEF623F713BC0003D04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		047CFEF823F713BE0003D04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		047CFEFB23F713BE0003D04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		047CFEFD23F713BE0003D04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047CFEFE23F713BE0003D04A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		047CFEA123F5B2780003D04A /* Frameworks */ = {
+		047CFEE923F713BC0003D04A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,77 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		047CFE9B23F5B2780003D04A = {
+		047CFEE323F713BC0003D04A = {
 			isa = PBXGroup;
 			children = (
-				047CFEA623F5B2780003D04A /* 09. Delegates */,
-				047CFEA523F5B2780003D04A /* Products */,
+				047CFEEE23F713BC0003D04A /* 10. Notifications */,
+				047CFEED23F713BC0003D04A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		047CFEA523F5B2780003D04A /* Products */ = {
+		047CFEED23F713BC0003D04A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				047CFEA423F5B2780003D04A /* 09. Delegates.app */,
+				047CFEEC23F713BC0003D04A /* 10. Notifications.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		047CFEA623F5B2780003D04A /* 09. Delegates */ = {
+		047CFEEE23F713BC0003D04A /* 10. Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				047CFEC023F5B9C20003D04A /* VSDoctor.h */,
-				047CFEC123F5B9C20003D04A /* VSDoctor.m */,
-				047CFEBD23F5B6550003D04A /* VSPatient.h */,
-				047CFEBE23F5B6550003D04A /* VSPatient.m */,
-				047CFEA723F5B2780003D04A /* AppDelegate.h */,
-				047CFEA823F5B2780003D04A /* AppDelegate.m */,
-				047CFEAA23F5B2780003D04A /* ViewController.h */,
-				047CFEAB23F5B2780003D04A /* ViewController.m */,
-				047CFEAD23F5B2780003D04A /* Main.storyboard */,
-				047CFEB023F5B27A0003D04A /* Assets.xcassets */,
-				047CFEB223F5B27A0003D04A /* LaunchScreen.storyboard */,
-				047CFEB523F5B27A0003D04A /* Info.plist */,
-				047CFEB623F5B27A0003D04A /* main.m */,
+				047CFEEF23F713BC0003D04A /* AppDelegate.h */,
+				047CFEF023F713BC0003D04A /* AppDelegate.m */,
+				047CFEF223F713BC0003D04A /* ViewController.h */,
+				047CFEF323F713BC0003D04A /* ViewController.m */,
+				047CFEF523F713BC0003D04A /* Main.storyboard */,
+				047CFEF823F713BE0003D04A /* Assets.xcassets */,
+				047CFEFA23F713BE0003D04A /* LaunchScreen.storyboard */,
+				047CFEFD23F713BE0003D04A /* Info.plist */,
+				047CFEFE23F713BE0003D04A /* main.m */,
 			);
-			path = "09. Delegates";
+			path = "10. Notifications";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		047CFEA323F5B2780003D04A /* 09. Delegates */ = {
+		047CFEEB23F713BC0003D04A /* 10. Notifications */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 047CFEBA23F5B27A0003D04A /* Build configuration list for PBXNativeTarget "09. Delegates" */;
+			buildConfigurationList = 047CFF0223F713BE0003D04A /* Build configuration list for PBXNativeTarget "10. Notifications" */;
 			buildPhases = (
-				047CFEA023F5B2780003D04A /* Sources */,
-				047CFEA123F5B2780003D04A /* Frameworks */,
-				047CFEA223F5B2780003D04A /* Resources */,
+				047CFEE823F713BC0003D04A /* Sources */,
+				047CFEE923F713BC0003D04A /* Frameworks */,
+				047CFEEA23F713BC0003D04A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "09. Delegates";
-			productName = "09. Delegates";
-			productReference = 047CFEA423F5B2780003D04A /* 09. Delegates.app */;
+			name = "10. Notifications";
+			productName = "10. Notifications";
+			productReference = 047CFEEC23F713BC0003D04A /* 10. Notifications.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		047CFE9C23F5B2780003D04A /* Project object */ = {
+		047CFEE423F713BC0003D04A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = MacBookPro;
 				TargetAttributes = {
-					047CFEA323F5B2780003D04A = {
+					047CFEEB23F713BC0003D04A = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 047CFE9F23F5B2780003D04A /* Build configuration list for PBXProject "09. Delegates" */;
+			buildConfigurationList = 047CFEE723F713BC0003D04A /* Build configuration list for PBXProject "10. Notifications" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,57 +113,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 047CFE9B23F5B2780003D04A;
-			productRefGroup = 047CFEA523F5B2780003D04A /* Products */;
+			mainGroup = 047CFEE323F713BC0003D04A;
+			productRefGroup = 047CFEED23F713BC0003D04A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				047CFEA323F5B2780003D04A /* 09. Delegates */,
+				047CFEEB23F713BC0003D04A /* 10. Notifications */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		047CFEA223F5B2780003D04A /* Resources */ = {
+		047CFEEA23F713BC0003D04A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047CFEB423F5B27A0003D04A /* LaunchScreen.storyboard in Resources */,
-				047CFEB123F5B27A0003D04A /* Assets.xcassets in Resources */,
-				047CFEAF23F5B2780003D04A /* Main.storyboard in Resources */,
+				047CFEFC23F713BE0003D04A /* LaunchScreen.storyboard in Resources */,
+				047CFEF923F713BE0003D04A /* Assets.xcassets in Resources */,
+				047CFEF723F713BC0003D04A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		047CFEA023F5B2780003D04A /* Sources */ = {
+		047CFEE823F713BC0003D04A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047CFEBF23F5B6550003D04A /* VSPatient.m in Sources */,
-				047CFEAC23F5B2780003D04A /* ViewController.m in Sources */,
-				047CFEB723F5B27A0003D04A /* main.m in Sources */,
-				047CFEA923F5B2780003D04A /* AppDelegate.m in Sources */,
-				047CFEC223F5B9C20003D04A /* VSDoctor.m in Sources */,
+				047CFEF423F713BC0003D04A /* ViewController.m in Sources */,
+				047CFEFF23F713BE0003D04A /* main.m in Sources */,
+				047CFEF123F713BC0003D04A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		047CFEAD23F5B2780003D04A /* Main.storyboard */ = {
+		047CFEF523F713BC0003D04A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				047CFEAE23F5B2780003D04A /* Base */,
+				047CFEF623F713BC0003D04A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		047CFEB223F5B27A0003D04A /* LaunchScreen.storyboard */ = {
+		047CFEFA23F713BE0003D04A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				047CFEB323F5B27A0003D04A /* Base */,
+				047CFEFB23F713BE0003D04A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,7 +169,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		047CFEB823F5B27A0003D04A /* Debug */ = {
+		047CFF0023F713BE0003D04A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +228,7 @@
 			};
 			name = Debug;
 		};
-		047CFEB923F5B27A0003D04A /* Release */ = {
+		047CFF0123F713BE0003D04A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,35 +281,35 @@
 			};
 			name = Release;
 		};
-		047CFEBB23F5B27A0003D04A /* Debug */ = {
+		047CFF0323F713BE0003D04A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K55226VZK5;
-				INFOPLIST_FILE = "09. Delegates/Info.plist";
+				INFOPLIST_FILE = "10. Notifications/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vsevolod.-9--Delegates";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vsevolod.-0--Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		047CFEBC23F5B27A0003D04A /* Release */ = {
+		047CFF0423F713BE0003D04A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K55226VZK5;
-				INFOPLIST_FILE = "09. Delegates/Info.plist";
+				INFOPLIST_FILE = "10. Notifications/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vsevolod.-9--Delegates";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vsevolod.-0--Notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		047CFE9F23F5B2780003D04A /* Build configuration list for PBXProject "09. Delegates" */ = {
+		047CFEE723F713BC0003D04A /* Build configuration list for PBXProject "10. Notifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				047CFEB823F5B27A0003D04A /* Debug */,
-				047CFEB923F5B27A0003D04A /* Release */,
+				047CFF0023F713BE0003D04A /* Debug */,
+				047CFF0123F713BE0003D04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		047CFEBA23F5B27A0003D04A /* Build configuration list for PBXNativeTarget "09. Delegates" */ = {
+		047CFF0223F713BE0003D04A /* Build configuration list for PBXNativeTarget "10. Notifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				047CFEBB23F5B27A0003D04A /* Debug */,
-				047CFEBC23F5B27A0003D04A /* Release */,
+				047CFF0323F713BE0003D04A /* Debug */,
+				047CFF0423F713BE0003D04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 047CFE9C23F5B2780003D04A /* Project object */;
+	rootObject = 047CFEE423F713BC0003D04A /* Project object */;
 }
