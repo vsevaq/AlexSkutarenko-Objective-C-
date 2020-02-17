@@ -7,17 +7,65 @@
 //
 
 #import "AppDelegate.h"
+#import "VSGovernment.h"
+#import "VSDoctor.h"
+
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) VSGovernment* government;
 @end
-
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
+    
+    self.government = [[VSGovernment alloc] init];
+    
+    VSDoctor* doctor1 = [[VSDoctor alloc] init];
+    VSDoctor* doctor2 = [[VSDoctor alloc] init];
+    VSDoctor* doctor3 = [[VSDoctor alloc] init];
+    VSDoctor* doctor4 = [[VSDoctor alloc] init];
+    VSDoctor* doctor5 = [[VSDoctor alloc] init];
+    
+    doctor1.salary = doctor2.salary = doctor3.salary = doctor4.salary = doctor5.salary = self.government.salary;
+    
+    self.government.taxLevel = 5.5;
+    self.government.salary = 1100;
+    self.government.averagePrice = 15;
+    self.government.pension = 500;
+    
+    self.government.salary = 1050;
+    self.government.salary = 1150;
+    self.government.salary = 900;
+    
+    self.government.taxLevel = 5.5;
+    self.government.taxLevel = 5.5;
+    self.government.taxLevel = 5.5;
+    self.government.taxLevel = 5.5;
+
+    
+    //NSLog(@"%@", VSGovernmentSalaryDidChangeNotification);
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(governmentNotification:)
+                                                 name:VSGovernmentTaxLevelDidChangeNotification
+                                               object:nil];
+    
+    
+    
     return YES;
+}
+
+-(void)governmentNotification:(NSNotification*)notification{
+    NSLog(@"governmentNotification userIbf: %@", notification.userInfo);
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:VSGovernmentTaxLevelDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

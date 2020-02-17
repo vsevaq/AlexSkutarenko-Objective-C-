@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046C35D723FAB37100C71A07 /* VSDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C35D623FAB37100C71A07 /* VSDoctor.m */; };
 		047CFEF123F713BC0003D04A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEF023F713BC0003D04A /* AppDelegate.m */; };
 		047CFEF423F713BC0003D04A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEF323F713BC0003D04A /* ViewController.m */; };
 		047CFEF723F713BC0003D04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CFEF523F713BC0003D04A /* Main.storyboard */; };
 		047CFEF923F713BE0003D04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047CFEF823F713BE0003D04A /* Assets.xcassets */; };
 		047CFEFC23F713BE0003D04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CFEFA23F713BE0003D04A /* LaunchScreen.storyboard */; };
 		047CFEFF23F713BE0003D04A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFEFE23F713BE0003D04A /* main.m */; };
+		047CFF0723F832200003D04A /* VSGovernment.m in Sources */ = {isa = PBXBuildFile; fileRef = 047CFF0623F832200003D04A /* VSGovernment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046C35D523FAB37100C71A07 /* VSDoctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSDoctor.h; sourceTree = "<group>"; };
+		046C35D623FAB37100C71A07 /* VSDoctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSDoctor.m; sourceTree = "<group>"; };
 		047CFEEC23F713BC0003D04A /* 10. Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10. Notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		047CFEEF23F713BC0003D04A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		047CFEF023F713BC0003D04A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		047CFEFB23F713BE0003D04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047CFEFD23F713BE0003D04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047CFEFE23F713BE0003D04A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		047CFF0523F832200003D04A /* VSGovernment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSGovernment.h; sourceTree = "<group>"; };
+		047CFF0623F832200003D04A /* VSGovernment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSGovernment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 		047CFEEE23F713BC0003D04A /* 10. Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				046C35D523FAB37100C71A07 /* VSDoctor.h */,
+				046C35D623FAB37100C71A07 /* VSDoctor.m */,
+				047CFF0523F832200003D04A /* VSGovernment.h */,
+				047CFF0623F832200003D04A /* VSGovernment.m */,
 				047CFEEF23F713BC0003D04A /* AppDelegate.h */,
 				047CFEF023F713BC0003D04A /* AppDelegate.m */,
 				047CFEF223F713BC0003D04A /* ViewController.h */,
@@ -144,6 +154,8 @@
 				047CFEF423F713BC0003D04A /* ViewController.m in Sources */,
 				047CFEFF23F713BE0003D04A /* main.m in Sources */,
 				047CFEF123F713BC0003D04A /* AppDelegate.m in Sources */,
+				047CFF0723F832200003D04A /* VSGovernment.m in Sources */,
+				046C35D723FAB37100C71A07 /* VSDoctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
