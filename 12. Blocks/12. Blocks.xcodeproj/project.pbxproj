@@ -13,6 +13,7 @@
 		046C361323FC0C8700C71A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046C361223FC0C8700C71A07 /* Assets.xcassets */; };
 		046C361623FC0C8700C71A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046C361423FC0C8700C71A07 /* LaunchScreen.storyboard */; };
 		046C361923FC0C8700C71A07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C361823FC0C8700C71A07 /* main.m */; };
+		046C362123FC40AF00C71A07 /* VSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C362023FC40AF00C71A07 /* VSObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		046C361523FC0C8700C71A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046C361723FC0C8700C71A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046C361823FC0C8700C71A07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		046C361F23FC40AF00C71A07 /* VSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSObject.h; sourceTree = "<group>"; };
+		046C362023FC40AF00C71A07 /* VSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		046C360823FC0C8400C71A07 /* 12. Blocks */ = {
 			isa = PBXGroup;
 			children = (
+				046C361F23FC40AF00C71A07 /* VSObject.h */,
+				046C362023FC40AF00C71A07 /* VSObject.m */,
 				046C360923FC0C8400C71A07 /* AppDelegate.h */,
 				046C360A23FC0C8400C71A07 /* AppDelegate.m */,
 				046C360C23FC0C8400C71A07 /* ViewController.h */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046C360E23FC0C8400C71A07 /* ViewController.m in Sources */,
+				046C362123FC40AF00C71A07 /* VSObject.m in Sources */,
 				046C361923FC0C8700C71A07 /* main.m in Sources */,
 				046C360B23FC0C8400C71A07 /* AppDelegate.m in Sources */,
 			);

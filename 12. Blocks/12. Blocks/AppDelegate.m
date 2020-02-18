@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "VSObject.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +17,81 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //1
+    //[self testMethod];
+    void (^testBlock)(void);
+    testBlock = ^{
+        NSLog(@"Test block");
+    };
+    testBlock();
+    
+    
+    //2
+    //[self testMethodWithParams:@"testMethodWithParams" andIntValue:198];
+    void (^testBlockWithParams)(NSString*, NSInteger);
+    testBlockWithParams = ^(NSString* someString, NSInteger intValue) {
+        NSLog(@"testBlockWithParams: %@, andIntValue: %ld", someString, intValue);
+    };
+    testBlockWithParams(@"BlockWithParams", 197);
+    
+    
+    //3
+    //NSString* result = [self testMethodWithReturnValueAndParams:@"testMethodWithReturnValueAndParams" andIntValue:192];
+    //NSLog(@"%@", result);
+    NSString* (^testBlockWithReturnValueAndParams)(NSString*, NSInteger) = ^(NSString* someString, NSInteger intValue) {
+        return [NSString stringWithFormat:@"testBlockWithReturnValueAndParams: %@, andIntValue: %ld", someString, (long)intValue];
+    };
+    NSString* stringResult = testBlockWithReturnValueAndParams(@"TestBlockWithReturnValueAndParams", 196);
+    NSLog(@"Result of BlockWithReturnValueAndParams: %@", stringResult);
+    //-----------------------------------------------
+    
+    
+    //изменения переменных в БЛОКЕ
+    __block NSString* testString = @"How is it possible";
+    __block NSInteger i = 0;
+    void(^testBlock2)(void);
+    testBlock2 = ^{
+        NSLog(@"Test Block 2");
+        i = i + 1;
+        testString = [NSString stringWithFormat:@"How is it possible %ld", (long)i];
+        NSLog(@"%@", testString);
+    };
+    testBlock2();
+    testBlock2();
+    testBlock2();
+    testBlock2();
+    //-----------------------------------------------
+    
+    
+    [self testBlocksMethod:^{
+        NSLog(@"BLOCK!!!");
+    }];
+    
+    VSObject* obj = [[VSObject alloc] init];
+    obj.name = @"Test block";
+    
     return YES;
 }
 
+-(void)testMethod{
+    NSLog(@"test method");
+}
+
+-(void)testMethodWithParams:(NSString*)someString andIntValue:(NSInteger)intValue{
+    NSLog(@"testMethodWithParams: %@, andIntValue: %ld", someString, intValue);
+}
+
+-(NSString*)testMethodWithReturnValueAndParams:(NSString*)someString andIntValue:(NSInteger)intValue{
+    return [NSString stringWithFormat:@"testMethodWithReturnValueAndParams: %@ andIntValue: %ld", someString, intValue];
+}
+
+-(void)testBlocksMethod:(void (^)(void))testBlock{
+    NSLog(@"testBlocksMethod");
+    testBlock();
+    testBlock();
+    testBlock();
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
