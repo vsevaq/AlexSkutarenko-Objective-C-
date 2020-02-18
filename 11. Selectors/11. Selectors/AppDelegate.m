@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "VSObject.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +17,45 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    VSObject* obj = [[VSObject alloc] init];
+    
+    SEL selector1 = @selector(testMethod);
+    SEL selector2 = @selector(testMethod:);
+    SEL selector3 = @selector(testMethod:and:);
+    
+    [self performSelector:selector1];
+    [obj performSelector:selector1];
+    
+    NSString* secret = [obj performSelector:@selector(superSecretText)];
+    NSLog(@"secret: %@", secret);
+    [self performSelector:selector2 withObject:@"Hi testMethod 2"];
+    [self performSelector:selector3 withObject:@"What's up bor?" withObject:@"Let's go to train"];
+    [self performSelector:selector1 withObject:nil afterDelay:5.f];
+    
+    //[self performSelector:@selector(testMethodWithIntParametr:) withObject:[NSNumber numberWithInt:11]];
+    
+    NSString* a = NSStringFromSelector(selector1);
+    SEL sel = NSSelectorFromString(a);
+    
     return YES;
 }
 
+-(void)testMethod{
+    NSLog(@"testMethod");
+}
+
+-(void)testMethod:(NSString*)someString{
+    NSLog(@"testMethod: %@", someString);
+}
+
+-(void)testMethod:(NSString*)someString1 and:(NSString*)someString2{
+    NSLog(@"testMethod: %@ and: %@", someString1, someString2);
+}
+
+-(void)testMethodWithIntParametr:(NSInteger)intValue{
+    NSLog(@"testMethodWithIntParametr: %ld", (long)intValue);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
