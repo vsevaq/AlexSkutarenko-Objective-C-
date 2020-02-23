@@ -61,11 +61,38 @@
     NSLog(@"The 'text' string length: %ld", (long)text.length);
     */
     
+    /*
+    NSRange searchRange = NSMakeRange(0, [text length]);
+    NSInteger counter = 0;
+    
     while (YES) {
-        NSRange range = [text rangeOfString:@"NSString" options:<#(NSStringCompareOptions)#> range:<#(NSRange)#>];
+        NSRange range = [text rangeOfString:@"NSString" options:0 range:searchRange];
+        
+        if(range.location != NSNotFound){
+            NSInteger index = range.location + range.length;
+            searchRange.location = index;
+            searchRange.length = [text length] - index;
+            
+            counter++;
+        } else {
+            break;
+        }
     }
     
-    NSLog(@"Text: %@", text);
+    NSLog(@"counter: %ld", (long)counter);
+    
+    */
+    
+    //text = [text stringByReplacingOccurrencesOfString:@"NSString" withString:@"String"];
+    
+    //text = [text uppercaseString];
+    
+    //NSLog(@"Text: %@", text);
+    
+    NSLog(@"%d", [@"512" intValue]);
+    
+    NSArray* array = [text componentsSeparatedByString:@"123"];
+    NSLog(@"%@", array);
     
     return YES;
 }
