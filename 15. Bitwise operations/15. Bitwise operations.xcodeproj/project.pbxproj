@@ -13,6 +13,7 @@
 		046C36A22402D6C700C71A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046C36A12402D6C700C71A07 /* Assets.xcassets */; };
 		046C36A52402D6C700C71A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046C36A32402D6C700C71A07 /* LaunchScreen.storyboard */; };
 		046C36A82402D6C700C71A07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C36A72402D6C700C71A07 /* main.m */; };
+		046C36B02403109000C71A07 /* VSStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C36AF2403109000C71A07 /* VSStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		046C36A42402D6C700C71A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046C36A62402D6C700C71A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046C36A72402D6C700C71A07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		046C36AE2403109000C71A07 /* VSStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSStudent.h; sourceTree = "<group>"; };
+		046C36AF2403109000C71A07 /* VSStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		046C36972402D6C600C71A07 /* 15. Bitwise operations */ = {
 			isa = PBXGroup;
 			children = (
+				046C36AE2403109000C71A07 /* VSStudent.h */,
+				046C36AF2403109000C71A07 /* VSStudent.m */,
 				046C36982402D6C600C71A07 /* AppDelegate.h */,
 				046C36992402D6C600C71A07 /* AppDelegate.m */,
 				046C369B2402D6C600C71A07 /* ViewController.h */,
@@ -143,6 +148,7 @@
 			files = (
 				046C369D2402D6C600C71A07 /* ViewController.m in Sources */,
 				046C36A82402D6C700C71A07 /* main.m in Sources */,
+				046C36B02403109000C71A07 /* VSStudent.m in Sources */,
 				046C369A2402D6C600C71A07 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
