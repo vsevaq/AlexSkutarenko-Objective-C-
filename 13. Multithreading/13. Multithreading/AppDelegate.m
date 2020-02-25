@@ -10,6 +10,8 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) NSMutableArray* array;
+
 @end
 
 @implementation AppDelegate
@@ -17,21 +19,62 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self performSelector:@selector(testThread) withObject:nil];
+    //[self performSelector:@selector(testThread) withObject:nil];
+    
+    /*
+    for (int i = 0; i < 50; i++) {
+        NSThread* thread = [[NSThread alloc] initWithTarget:self selector:@selector(testThread) object:nil];
+        thread.name = [NSString stringWithFormat:@"Thread #%ld", (long)i + 1];
+        [thread start];
+    }
+     */
+    
+    
+    NSThread* thread1 = [[NSThread alloc] initWithTarget:self selector:@selector(addStringToArray:) object:@"x"];
+    NSThread* thread2 = [[NSThread alloc] initWithTarget:self selector:@selector(addStringToArray:) object:@"0"];
+    thread1.name = @"Thread 1";
+    thread2.name = @"Thread 2";
+    [thread1 start];
+    [thread2 start];
+    
+    self.array = [NSMutableArray array];
+    
+    [self performSelector:@selector(printArray) withObject:nil afterDelay:3];
     
     return YES;
 }
 
 -(void)testThread{
     
+    
+    double startTime = CACurrentMediaTime();
+    NSLog(@"%@", [[NSThread currentThread] name]);
     //все что в autoreleasepool - это вызывается в backGround
     @autoreleasepool {
-        for (int i = 0; i < 20000; i++) {
-            NSLog(@"%ld", (long)i);
+        for (int i = 0; i < 20000000; i++) {
+            //NSLog(@"%ld", (long)i);
         }
+        NSLog(@"%@ finished in: %f", [[NSThread currentThread] name], CACurrentMediaTime() - startTime);
     }
 }
 
+-(void)addStringToArray:(NSString*)string{
+    @autoreleasepool {
+        
+        double startTime = CACurrentMediaTime();
+        NSLog(@"%@", [[NSThread currentThread] name]);
+        
+        for (int i = 0; i < 200000; i++) {
+            [self.array addObject:string];
+        }
+        
+        NSLog(@"%@ finished in: %f", [[NSThread currentThread] name], CACurrentMediaTime() - startTime);
+    }
+}
+
+-(void)printArray {
+    NSLog(@"%@", self.array);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
