@@ -16,8 +16,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self performSelector:@selector(testThread) withObject:nil];
+    
     return YES;
+}
+
+-(void)testThread{
+    
+    //все что в autoreleasepool - это вызывается в backGround
+    @autoreleasepool {
+        for (int i = 0; i < 20000; i++) {
+            NSLog(@"%ld", (long)i);
+        }
+    }
 }
 
 
